@@ -1,5 +1,0 @@
-.env
-wmsvenv/
-__pycache__/
-*.pyc
-.DS_Store

@@ -1,4 +1,8 @@
-
 .env
-
 wmsvenv/
+.venv/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
+n8n/.credentials*
