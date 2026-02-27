@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../wms-backend">
+      <excludeFolder url="file://$MODULE_DIR$/../wms-backend/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/../wms-backend/.venv1" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.12 virtualenv at ~/learning-backend-automation/week1-api-database/wms-backend/wmsvenv" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
