@@ -44,3 +44,15 @@ python3 -m venv wmsvenv
 source wmsvenv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install fastapi uvicorn "psycopg[binary]" python-dotenv
+```
+
+## n8n
+Notes:
+1. Telegram credentials (bot token/chat id) are configured in n8n Credentials and are not stored in this repo.
+2. n8n timezone is set via GENERIC_TIMEZONE=Pacific/Auckland.
+
+### 1) Workflow 1: Alert + Auto-heal
+`Schedule` →  `GET reconcile` →  `IF mismatch > 0` →  `Telegram alert` →  `POST rebuild`→  `GET recheck`→  `IF still mismatch `→  `Telegram fail`
+
+### 2) Workflow 2: Daily Summary
+`Daily schedule (18:00 NZ)` → `GET stock` → `GET reconcile` → `Telegram summary`
